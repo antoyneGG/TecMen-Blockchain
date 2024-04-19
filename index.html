@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document Storage</title>
+</head>
+<body>
+    <h1>Document Storage</h1>
+
+    <h2>Subir Documento</h2>
+    <form id="uploadForm" enctype="multipart/form-data">
+        <label for="keyword">Palabra Clave:</label>
+        <input type="text" id="keyword" name="keyword" required>
+        <br>
+        <input type="file" id="file" name="file" required>
+        <br>
+        <button type="submit">Subir Documento</button>
+    </form>
+
+    <hr>
+
+    <h2>Buscar Documento</h2>
+    <form id="retrieveForm">
+        <label for="keywordSearch">Buscar por Palabra Clave:</label>
+        <input type="text" id="keywordSearch" name="keywordSearch" required>
+        <br>
+        <button type="submit">Buscar Documento</button>
+    </form>
+
+    <div id="result"></div>
+
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"></script>
+    <script src="./node_modules/web3/dist/web3.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"></script>
+    <script src="https://cdn.ethers.io/lib/ethers-5.2.umd.min.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
